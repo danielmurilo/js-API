@@ -9,9 +9,11 @@ function getAddressByCEP(cep){
             }
             return data.json()
         }).then(json => {
-            document.getElementById("result").innerHTML = json.logradouro + ' - ' + json.bairro + ' - ' + json.localidade + ' - ' + json.uf;
+            document.getElementById("result").innerHTML = json.logradouro + ' - ' + json.bairro + ' - ' + json.localidade + ' - ' + json.uf
            //console.log(json)
         })
 
 }
+
+//getAddressByCEP('01310930')
 
